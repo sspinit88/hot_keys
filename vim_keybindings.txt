@@ -1,0 +1,130 @@
+
+Строка из настройки                           | На клавиатуре        | Описание действия
+
+--------------------------------------------- | -------------------- | -------------------------------------------------------------
+
+nmap <leader>e :NERDTreeToggle<CR>            | Space + e            | Открыть/закрыть NERDTree
+
+nmap <leader>pv :NERDTreeFocus<CR>            | Space + p + v        | Фокус на NERDTree
+
+nnoremap <c-d> <c-d>zz                        | Ctrl + D             | Прокрутка вниз с центровкой экрана
+
+nnoremap <c-u> <c-u>zz                        | Ctrl + U             | Прокрутка вверх с центровкой экрана
+
+nmap <leader>h :nohlsearch<CR>                | Space + h            | Отключить подсветку поиска
+
+nnoremap <c-\> :action SplitVertically<CR>    | Ctrl + \             | Вертикальное разделение окна
+
+nnoremap <c--> :action SplitHorizontally<CR>  | Ctrl + -             | Горизонтальное разделение окна
+
+nnoremap <c-=> :action Unsplit<CR>            | Ctrl + =             | Закрыть текущее разделенное окно
+
+nnoremap <c-m> :action
+MoveEditorToOppositeTabGroup<CR>              | Ctrl + M             | Переместить редактор в противоположную группу вкладок
+
+nnoremap <c-z> :action
+ToggleDistractionFreeMode<CR>                 | Ctrl + Z             | Включить/выключить режим "без отвлечений"
+
+nnoremap <leader>bn :bnext<CR>                | Space + b + n        | Перейти к следующему буферу
+
+nnoremap <leader>bp :bprevious<CR>            | Space + b + p        | Перейти к предыдущему буферу
+
+nmap <C-Tab> :action PreviousTab<CR>          | Ctrl + Tab           | Перейти к предыдущей вкладке
+
+nmap <Tab> :action NextTab<CR>                | Tab                  | Перейти к следующей вкладке
+
+nmap <leader>t :action GotoTest<CR>           | Space + t            | Перейти к тесту
+
+xnoremap J :m '>+1<CR>gv=gv                   | J в визуальном режиме | Переместить выделенный текст вниз
+
+xnoremap K :m '<-2<CR>gv=gv                   | K в визуальном режиме | Переместить выделенный текст вверх
+
+nnoremap <leader>st :action FindInPath<CR>    | Space + s + t        | Открыть поиск по проекту
+
+nnoremap <leader>sf :action GotoFile<CR>      | Space + s + f        | Перейти к файлу
+
+nnoremap <leader>ls :action
+ActivateStructureToolWindow<CR>               | Space + l + s        | Активировать окно структуры
+
+noremap <leader>fs :action
+FileStructurePopup<CR> | Space + f + s        | Открыть всплывающее окно структуры файла
+
+nnoremap <leader>o :action RecentFiles<CR>    | Space + o            | Показать недавние файлы
+
+nnoremap <c-a> :action GotoAction<CR>         | Ctrl + A             | Перейти к действию
+
+nnoremap <c-t> :action
+ActivateTerminalToolWindow<CR>                | Ctrl + T             | Открыть окно терминала
+
+nnoremap <c-p> :action RecentFiles<CR>        | Ctrl + P             | Показать недавние файлы
+
+nnoremap <c-r> :action RunMenu<CR>            | Ctrl + R             | Открыть меню запуска
+
+nnoremap <c-g> :action Generate<CR>           | Ctrl + G             | Генерация кода
+
+nnoremap <leader><Tab> :action ShowNavBar<CR> | Space + Tab          | Показать панель навигации
+
+nmap [b :action PreviousTab<CR>               | [ + b                | Перейти к предыдущей вкладке
+
+nmap ]b :action NextTab<CR>                   | ] + b                | Перейти к следующей вкладке
+
+nmap [g :action GotoPreviousError<CR>         | [ + g                | Перейти к предыдущей ошибке
+
+nmap ]g :action GotoNextError<CR>             | ] + g                | Перейти к следующей ошибке
+
+nmap [u :action
+GotoPrevElementUnderCaretUsage<CR>            | [ + u                | Перейти к предыдущему использованию элемента под курсором
+
+nmap ]u :action
+GotoNextElementUnderCaretUsage<CR>            | ] + u                | Перейти к следующему использованию элемента под курсором
+
+nmap [o :action PreviousOccurence<CR>         | [ + o                | Перейти к предыдущему вхождению
+
+nmap ]o :action NextOccurence<CR>             | ] + o                | Перейти к следующему вхождению
+
+nmap [m :action MethodUp<CR>                  | [ + m                | Перейти к предыдущему методу
+
+nmap ]m :action MethodDown<CR>                | ] + m                | Перейти к следующему методу
+
+nmap [c :action JumpToLastChange<CR>          | [ + c                | Перейти к последнему изменению
+
+nmap ]c :action JumpToNextChange<CR>          | ] + c                | Перейти к следующему изменению
+
+nnoremap <leader>lr :action RenameElement<CR> | Space + l + r        | Переименовать элемент
+
+nnoremap <leader>lR :action RenameFile<CR>    | Space + l + R        | Переименовать файл
+
+nnoremap <leader>lf :action ReformatCode<CR>  | Space + l + f        | Форматирование кода
+
+nnoremap <leader>r :action
+Refactorings.QuickListPopupAction<CR>         | Space + r            | Открыть быстрое меню рефакторинга
+
+nnoremap <leader>la :action
+ShowIntentionActions<CR>                      | Space + l + a        | Показать доступные действия
+
+nnoremap <leader>ll :action
+ActivateProblemsViewToolWindow<CR>            | Space + l + l        | Показать окно с проблемами
+
+nmap <leader>a :action GotoAction<CR>         | Space + a            | Перейти к действию
+
+nmap ga :action GotoAction<CR>                | g + a                | Перейти к действию
+
+nmap gf :action GotoFile<CR>                  | g + f                | Перейти к файлу
+
+nmap gs :action GotoSymbol<CR>                | g + s                | Перейти к символу
+
+nmap gT :action TextSearchAction<CR>          | g + T                | Поиск по тексту
+
+nmap go :action GotoSuperMethod<CR>           | g + o                | Перейти к родительскому методу
+
+nmap gd :action GotoDeclaration<CR>           | g + d                | Перейти к объявлению
+
+nmap gD :action GotoTypeDeclaration<CR>       | g + D                | Перейти к объявлению типа
+
+nmap gi :action GotoImplementation<CR>        | g + i                | Перейти к реализации
+
+nmap gI :action QuickImplementations<CR>      | g + I                | Быстрый просмотр реализаций
+
+nmap gn :action ShowNavBar<CR>                | g + n                | Показать панель навигации
+
+nmap gr :action FindUsages<CR>                | п + r                | Выполняет поиск всех мест использования элемента под курсором в проекте
